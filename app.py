@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 import streamlit as st
 
 # Load data
-data = pd.read_csv("C:/Users/Pradyuman/Desktop/spam detection/spam_and_ham_classification.csv")
+data = pd.read_csv("spam_and_ham_classification.csv")
 
 # Keep only text and label columns
 data = data[['text', 'label']]
@@ -64,3 +64,4 @@ if st.button('Validate'):
     else:
         output = predict(input_mess)
         st.markdown(output)
+
